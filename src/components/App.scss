@@ -1,0 +1,43 @@
+// variables
+@use "../styles/variables";
+// font used for project
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: variables.$body-font;
+    font-style: variables.$normal-font-size;
+    color: variables.$second-color;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+
+    width: 1500px;
+    margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+# inicjalizacja repo
+1. npm init
+
+# webpack
+2. npm i -D webpack webpack-cli webpack-dev-server
+
+# babel - kompilator JS
+3. npm i -D babel-loader @babel/core @babel/preset-env
+
+# obsługa CSS-a i minimalizacja
+4. npm i -D css-loader mini-css-extract-plugin
+
+# obsługa SASS
+5. npm i -D sass sass-loader
+
+# obsługa CSS-a dla starszych przeglądarek (vendor prefixes)
+6. npm i -D postcss postcss-preset-env postcss-loader
+
+>> Zarówno Babel jak i Postcss szukają pliku .browserslist (jeżeli go nie ma to też wszystko zadziała)
+
+# REACT
+7. npm i --save react react-dom
+8. npm i -D @babel/preset-react
+
+# templatka html
+9. npm i -D html-webpack-plugin
+
+# opcjonalna biblioteka (potrzebna podczas pracy na Windows)
+# biblioteka pozwala na dodanie lokalnej zmiennej środowiskowej dla wywoływanego polecenia
+# np.: NODE_ENV=production webpack
+npm i --save-optional win-node-env

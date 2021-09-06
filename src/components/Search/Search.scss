@@ -1,0 +1,70 @@
+@use "../../styles/variables";
+
+.Search {
+    // box model
+    width: 100%;
+    height: 300px;
+    // pos
+    position: relative;
+    // display
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background
+    background: url("../../images/pink.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -320px;
+
+    .container {
+        // box model
+        width: 500px;
+        height: 35px;
+        // display
+        display: flex;
+        // rest
+        border-radius: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        .icon {
+            // box model
+            width: 5%;
+            height: 100%;
+            // border
+            border: 1px solid variables.$second-color;
+            border-right: none;
+            border-radius: 15px 0 0 15px;
+            // rest
+            background-color: white;
+
+            i {
+                position: relative;
+                top: 5.5px;
+                left: 3.5px;
+            }
+        }
+
+        input {
+            // box model
+            width: 95%;
+            height: 100%;
+            padding: 0 15px;
+            // border
+            border: 1px solid variables.$second-color;
+            border-left: none;
+            border-radius: 0 15px 15px 0;
+            outline: none;
+            // font
+            font-family: variables.$body-font;
+            font-size: variables.$normal-font-size;
+        }
+    }
+
+    .author {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 5px;
+        color: white;
+    }
+}
